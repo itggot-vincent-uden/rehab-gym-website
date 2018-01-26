@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+header {
+    grid-row: span 3;
+    grid-column: span 1;
+}
+
+header>img {
+    width: 100%;
+    height: auto;
+}
