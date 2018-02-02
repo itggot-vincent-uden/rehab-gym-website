@@ -1,11 +1,32 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
+    margin: 0px;
+    padding: 0px;
+}
+
+.news {
+    grid-row: span 4;
+    padding: 5px;
+}
+
+.membership {
+    grid-row: span 8;
+    padding: 5px;
+}
+
+article {
+    padding-left: 5px;
 }
 
 header {
-    grid-row: span 2;
+    grid-row: span 1;
     grid-column: span 1;
 }
 
@@ -21,19 +42,19 @@ article>img {
 
 h1 {
     font-family: 'Kreon', serif;
-    font-size: 32px;
+    font-size: 46px;
     color: #313131;
 }
 
 h2 {
     font-family: 'Kreon', serif;
-    font-size: 20px;
+    font-size: 32px;
     color: #297F2D;
 }
 
 h3 {
     font-family: 'Kreon', serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #354A32;
 }
 
@@ -41,4 +62,24 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
     color: #313131;
+}
+
+.menu {
+    position: absolute;
+    display: none;
+}
+
+.menuButton {
+    top: 50%;
+    right: 0;
+    position: fixed;
+    background-color: #B7B7B7;
+    transform: translateY(-50%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-right: 0%;
+}
+
+i.material-icons {
+    font-size: 50px;
 }
