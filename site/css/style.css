@@ -65,8 +65,35 @@ p {
 }
 
 .menu {
-    position: absolute;
-    display: none;
+    position: fixed;
+    background-color: #B7B7B7;
+    width: 50%;
+    height: 100%;
+    left: 100vw;
+    transition: 0.5s ease-in-out;
+}
+
+.menu li {
+    color: #354A32;
+    font-size: 20px;
+    font-family: 'Kreon', serif;
+    list-style-type: none;
+    text-align: right;
+    border-bottom: #838383 solid 1px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding-right: 10vw;
+    margin-top: 0px;
+}
+
+.show {
+    left: 50vw;
+    transition: 0.5s ease-in-out;
 }
 
 .menuButton {
@@ -78,6 +105,16 @@ p {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding-right: 0%;
+    padding-top: 30px;
+    padding-left: -15px;
+    height: 80px;
+    width: 40px;
+    transition: 0.5s ease-in-out;
+}
+
+.active {
+    right: 50vw;
+    transition: 0.5s ease-in-out;
 }
 
 i.material-icons {
