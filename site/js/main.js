@@ -5,6 +5,6 @@ function toggleMenu(){
     element = document.querySelector(".menuButton");
     element.classList.toggle("active");
 
-    element = document.querySelector("main");
-    element.classList.toggle("fade")
+    element = document.querySelector(".overlay");
+    element.classList.toggle("displayed");
 }

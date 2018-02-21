@@ -66,7 +66,7 @@ p {
 
 .menu {
     position: fixed;
-    background-color: #B7B7B7;
+    background-color: #00BD4A;
     width: 50%;
     height: 100%;
     left: 100vw;
@@ -74,12 +74,12 @@ p {
 }
 
 .menu li {
-    color: #354A32;
+    color: #FFF;
     font-size: 20px;
     font-family: 'Kreon', serif;
     list-style-type: none;
     text-align: right;
-    border-bottom: #838383 solid 1px;
+    border-bottom: #FFF solid 1px;
 }
 
 .menu ul {
@@ -100,7 +100,7 @@ p {
     top: 50%;
     right: 0;
     position: fixed;
-    background-color: #B7B7B7;
+    background-color: #00BD4A;
     transform: translateY(-50%);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -119,4 +119,25 @@ p {
 
 i.material-icons {
     font-size: 50px;
+    color: #FFF;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: none;
+    padding: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0;
+    visibility: none;
+    transition: visibility 0s, opacity 0.5s, linear;
+}
+
+.displayed {
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s, linear;
+    opacity: 0.7;
 }
