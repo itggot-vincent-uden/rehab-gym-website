@@ -6,7 +6,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     margin: 0px;
     padding: 0px;
 }
@@ -17,8 +17,25 @@ body {
 }
 
 .membership {
-    grid-row: span 8;
+    grid-row: span 4;
     padding: 5px;
+}
+
+.membership h2 {
+    margin-bottom: 0px;
+}
+.membership h3 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.membership p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.membership article {
+    margin: 5px;
 }
 
 article {
@@ -60,7 +77,7 @@ h3 {
 
 p {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: #313131;
 }
 
@@ -140,4 +157,48 @@ i.material-icons {
     visibility: visible;
     transition: visibility 0s, opacity 0.5s, linear;
     opacity: 0.7;
+}
+
+footer {
+    grid-row: span 1;
+    background-color: #00BD4A;
+    padding-top: 0px;
+}
+
+footer>h2 {
+    text-align: center;
+    color: #FFF;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+}
+
+footer table {
+    border-spacing: 60px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+footer td {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer td:nth-of-type(2n) {
+    text-align: right;
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    margin: 0px;
+}
+
+footer table:nth-of-type(2) {
+    border-spacing: 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
