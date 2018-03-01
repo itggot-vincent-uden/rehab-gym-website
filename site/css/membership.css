@@ -1,9 +1,25 @@
 header h1 {
     text-align: center;
-    margin-top: 0%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .memberships {
     margin: 0px;
-    padding: 3px;
+    padding-top: 0px;
+    grid-row: span 2;
+}
+
+.memberships h2, p {
+    margin-left: 10px;
+}
+
+.memberships img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.memberships article {
+    margin-top: 10px;
 }

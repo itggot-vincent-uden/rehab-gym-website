@@ -84,6 +84,7 @@ a {
 
 .show {
     left: 50vw;
+    opacity: 1;
     transition: 0.5s ease-in-out;
 }
 
@@ -91,6 +92,7 @@ a {
     top: 50%;
     right: 0;
     position: fixed;
+    opacity: 0.5;
     background-color: #00BD4A;
     transform: translateY(-50%);
     border-top-left-radius: 15px;
@@ -100,21 +102,31 @@ a {
     padding-left: -15px;
     height: 80px;
     width: 40px;
-    transition: 0.5s ease-in-out;
+    transition: opacity 0.2s linear;
+    transition: right 0.5s ease-in-out;
+}
+
+.menuButton:hover {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+    transition: right 0.5s ease-in-out;
 }
 
 .active {
     right: 50vw;
-    transition: 0.5s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+    transition: right 0.5s ease-in-out;
 }
 
 i.material-icons {
     font-size: 50px;
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 .overlay {
     position: fixed;
+    pointer-events: none;
     top: 0;
     left: 0;
     margin: none;
@@ -128,6 +140,7 @@ i.material-icons {
 }
 
 .displayed {
+    pointer-events: all;
     visibility: visible;
     transition: visibility 0s, opacity 0.5s, linear;
     opacity: 0.7;
