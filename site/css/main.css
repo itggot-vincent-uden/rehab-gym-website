@@ -1,0 +1,28 @@
+.news {
+    grid-row: span 4;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 15px;
+}
+
+.membership {
+    grid-row: span 4;
+    padding: 5px;
+}
+
+.membership h2 {
+    margin-bottom: 0px;
+}
+.membership h3 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.membership p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.membership article {
+    margin: 5px;
+}
