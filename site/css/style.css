@@ -102,14 +102,13 @@ a {
     padding-left: -15px;
     height: 80px;
     width: 40px;
-    transition: opacity 0.2s linear;
-    transition: right 0.5s ease-in-out;
+    transition: opacity 0.2s linear, right 0.5s ease-in-out;
 }
 
 .menuButton:hover {
     opacity: 1;
-    transition: opacity 0.2s linear;
-    transition: right 0.5s ease-in-out;
+    /* transition: opacity 0.2s linear;
+    transition: right 0.5s ease-in-out; */
 }
 
 .active {
@@ -137,12 +136,12 @@ i.material-icons {
     opacity: 0;
     visibility: none;
     transition: visibility 0s, opacity 0.5s, linear;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
 }
 
 .displayed {
     pointer-events: all;
     visibility: visible;
-    transition: visibility 0s, opacity 0.5s, linear;
     opacity: 0.7;
 }
 
