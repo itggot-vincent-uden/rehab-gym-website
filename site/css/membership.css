@@ -5,13 +5,17 @@ header h1 {
 }
 
 .container {
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 1fr repeat(5, 3fr) 1fr;
 }
 
 .memberships {
     margin: 0px;
     padding-top: 0px;
     grid-row: span 6;
+}
+
+header {
+    grid-row: span 1;
 }
 
 .memberships h2, p {
