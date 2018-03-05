@@ -11,11 +11,6 @@ body {
     padding: 0px;
 }
 
-header {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
 body>img:first-of-type {
     width: 100vw;
     height: auto;
@@ -147,7 +142,8 @@ i.material-icons {
 
 footer {
     background-color: #00BD4A;
-    padding-top: 0px;
+    padding-top: 3vh;
+    height: 29vh;
 }
 
 footer>h2 {
@@ -215,6 +211,11 @@ footer table:nth-of-type(2) {
         width: 40px !important;
         height: auto;
         margin: 0px;
+    }
+
+    footer {
+        height: 20vh;
+        padding-top: 5vh;
     }
 
     .menu {
