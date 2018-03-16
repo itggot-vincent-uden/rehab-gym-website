@@ -14,8 +14,8 @@ header h1 {
     grid-row: span 6;
 }
 
-header {
-    grid-row: span 1;
+.pageTitle {
+    position: relative;
 }
 
 .memberships h2, p {
