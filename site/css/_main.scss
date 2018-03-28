@@ -4,6 +4,14 @@
     grid-template-rows: repeat(7, 22fr) 1fr;
 }
 
+.topMargin {
+    margin-top: 0vh !important;
+}
+
+.negMargin {
+    margin-left: -10px !important;
+}
+
 .news {
     grid-row: span 4;
     padding: 0px;
@@ -64,5 +72,13 @@
     article img {
         width: 35vw;
         height: auto;
+    }
+
+    .negMargin {
+        margin-left: 0px !important;
+    }
+
+    .topMargin {
+        margin-top: 12vh !important;
     }
 }

@@ -210,6 +210,12 @@ footer table:nth-of-type(2) {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, 22fr) 1fr; }
 
+.topMargin {
+  margin-top: 0vh !important; }
+
+.negMargin {
+  margin-left: -10px !important; }
+
 .news {
   grid-row: span 4;
   padding: 0px;
@@ -259,7 +265,13 @@ footer table:nth-of-type(2) {
 
   article img {
     width: 35vw;
-    height: auto; } }
+    height: auto; }
+
+  .negMargin {
+    margin-left: 0px !important; }
+
+  .topMargin {
+    margin-top: 12vh !important; } }
 header h1 {
   text-align: center;
   margin-top: 10px;
@@ -267,6 +279,9 @@ header h1 {
 
 .container {
   grid-template-rows: 1fr repeat(5, 3fr) 1fr; }
+
+.gutter {
+  grid-column-gap: 10vw; }
 
 .memberships {
   margin: 0px;
@@ -284,12 +299,15 @@ header h1 {
   margin-left: auto;
   margin-right: auto; }
 
+article {
+  margin-left: 10px; }
+
 .memberships article {
   margin-top: 10px; }
 
 @media only screen and (min-device-width: 799px) {
   .container {
-    margin-top: 12vh;
+    margin-top: 0vh;
     margin-left: 10vw;
     margin-bottom: 12vh;
     grid-template-columns: 1fr 1fr;

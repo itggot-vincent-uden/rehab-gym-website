@@ -8,6 +8,10 @@ header h1 {
     grid-template-rows: 1fr repeat(5, 3fr) 1fr;
 }
 
+.gutter {
+    grid-column-gap: 10vw;
+}
+
 .memberships {
     margin: 0px;
     padding-top: 0px;
@@ -28,13 +32,17 @@ header h1 {
     margin-right: auto;
 }
 
+article {
+    margin-left: 10px;
+}
+
 .memberships article {
     margin-top: 10px;
 }
 
 @media only screen and (min-device-width: 799px) {
     .container {
-        margin-top: 12vh;
+        margin-top: 0vh;
         margin-left: 10vw;
         margin-bottom: 12vh;
         grid-template-columns: 1fr 1fr;
